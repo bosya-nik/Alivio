@@ -1,0 +1,450 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.card-main p, .title p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.9rem;
+}
+
+.footer-menu__link, .product .product-content__our, .video__content p, .baner-content p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #ffffff;
+}
+
+.header-sign a, .header-menu__link {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1.9rem;
+}
+.header .icon-menu {
+  display: none;
+}
+.header-menu__item {
+  display: flex;
+}
+.header-menu__link {
+  padding: 1rem 2rem;
+  margin-right: 2.5rem;
+}
+.header-sign__text {
+  padding-right: 2rem;
+}
+.header-sign__button {
+  font-family: "Lato", sans-serif;
+  padding: 1rem 3rem 1rem 3rem;
+  background-color: #01996D;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: all 0.25s ease-in-out;
+  border: solid 1px transparent;
+}
+.header-sign__button:hover {
+  background-color: #ffffff;
+  border: solid 1px #01996D;
+  color: #292929;
+  transition: all 0.25s ease-in-out;
+}
+@media screen and (max-width: 375px) {
+  .header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    align-items: center;
+  }
+  .header__logo {
+    display: none;
+  }
+  .header .icon-menu {
+    display: block;
+    font-size: 30px;
+  }
+  .header .header-menu {
+    display: none;
+  }
+  .header .header-menu__item {
+    display: flex;
+  }
+  .header .header-menu__link {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    padding-right: 72px;
+  }
+  .header .header-sign a {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .header .header-sign__text {
+    padding: 0;
+  }
+  .header .header-sign__button {
+    display: none;
+    padding: 1rem 3rem 1rem 3rem;
+    background-color: #01996D;
+    border-radius: 4px;
+    color: #ffffff;
+    transition: all 0.25s ease-in-out;
+  }
+  .header .header-sign__button:hover {
+    background-color: #ffffff;
+    border: solid 1px #01996D;
+    color: #292929;
+    transition: all 0.25s ease-in-out;
+  }
+}
+
+.baner-content {
+  margin-top: 1.9rem;
+  background-image: url(/src/img/baner.jpg);
+  height: 56rem;
+  padding: 175px 0 0 275px;
+}
+.baner-content h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.6rem;
+  color: #01996D;
+}
+.baner-content p {
+  color: #484848;
+  padding: 30px 0 38px 0;
+}
+.baner-content__button {
+  font-family: "Lato", sans-serif;
+  padding: 1rem 3rem 1rem 3rem;
+  background-color: #01996D;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: all 0.25s ease-in-out;
+  border: solid 1px transparent;
+}
+.baner-content__button:hover {
+  background-color: #ffffff;
+  border: solid 1px #01996D;
+  color: #292929;
+  transition: all 0.25s ease-in-out;
+}
+@media screen and (max-width: 375px) {
+  .baner .baner-content {
+    overflow: hidden;
+    margin-top: 0;
+    background-image: url(/src/img/baner.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 812px;
+    padding: 30px 0px 0px 20px;
+  }
+  .baner .baner-content h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: normal;
+    color: #01996D;
+    font-family: "Noto Serif";
+  }
+  .baner .baner-content p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 2rem;
+    color: #484848;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12.7rem;
+}
+.title h1 {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 4.8rem;
+  color: #01996D;
+  margin-right: 8.5rem;
+}
+@media screen and (max-width: 375px) {
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .title h1 {
+    font-family: "Noto Serif", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: normal;
+    color: #01996D;
+    margin: 0 auto;
+  }
+  .title p {
+    display: none;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 30px;
+  }
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3.2rem;
+}
+.card-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 187px 95px 0 0;
+  position: relative;
+}
+.card-main__nomber {
+  position: absolute;
+  top: -2.5rem;
+  left: 10px;
+}
+.card-main:last-child {
+  margin: 15rem 0;
+}
+.card-main:nth-child(2) {
+  margin-top: 29.5rem;
+}
+.card-main h1 {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 2.8rem;
+}
+.card-main p {
+  color: #424242;
+  padding: 55px 0 60px 0;
+}
+
+.video {
+  background-color: #245852;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video__content h1 {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  font-size: 3.1rem;
+  line-height: 4.8rem;
+  color: #ffffff;
+}
+.video__content p {
+  margin: 33px 0 77px 0;
+}
+.video__button {
+  font-family: "Lato", sans-serif;
+  padding: 1rem 3rem 1rem 3rem;
+  background-color: #01996D;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: all 0.25s ease-in-out;
+  border: solid 1px transparent;
+}
+.video__button:hover {
+  background-color: #ffffff;
+  border: solid 1px #01996D;
+  color: #292929;
+  transition: all 0.25s ease-in-out;
+}
+.video-rolik {
+  margin: 229px 0 179px 31px;
+}
+.video-rolik__video {
+  filter: brightness(70%);
+}
+.video-rolik__video:hover {
+  transition: all 0.25s ease;
+}
+.video-rolik__play {
+  position: relative;
+  right: 50%;
+  bottom: 12.5rem;
+  z-index: 2;
+}
+
+.product {
+  margin-top: 7.5rem;
+  display: flex;
+  justify-content: center;
+}
+.product-ava {
+  max-height: 43.7rem;
+}
+.product-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 18.5rem;
+  height: 18.3rem;
+  background-color: #ffffff;
+  box-shadow: 0 3px 18px rgba(165, 165, 165, 0.25);
+  border-radius: 2px;
+  position: relative;
+  bottom: 25%;
+  right: 10%;
+}
+.product-description__title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  font-family: "Lato", sans-serif;
+}
+.product-description__title::after {
+  margin: 8px 0 13px 0;
+  display: block;
+  content: "";
+  width: 6.25rem;
+  height: 1px;
+  border-radius: 3px;
+  background-color: #000000;
+}
+.product-description__name {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin: 10px 0 20px 0;
+}
+.product-description__contents {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.product-description__list {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+}
+.product-description__list li:nth-child(1) {
+  padding-bottom: 1rem;
+}
+.product .product-content {
+  margin-left: 86px;
+}
+.product .product-content__our {
+  color: #424242;
+}
+.product .product-content__title {
+  font-family: "Noto Serif", serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 78px;
+  color: #01996D;
+  margin: 10px 0 20px 0;
+}
+.product .product-content__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  color: #484848;
+  margin-bottom: 60px;
+}
+.product .product-content__button {
+  font-family: "Lato", sans-serif;
+  padding: 1rem 3rem 1rem 3rem;
+  background-color: #01996D;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: all 0.25s ease-in-out;
+  border: solid 1px transparent;
+}
+.product .product-content__button:hover {
+  background-color: #ffffff;
+  border: solid 1px #01996D;
+  color: #292929;
+  transition: all 0.25s ease-in-out;
+}
+
+.footer {
+  margin-top: 10.5rem;
+  padding: 95px 0 0 275px;
+  background-color: #245852;
+}
+.footer img {
+  margin-bottom: 3.7rem;
+}
+.footer-menu__item {
+  padding-bottom: 55px;
+}
+.footer-menu__link {
+  color: #ffffff;
+  padding: 5px;
+}
+
+/*# sourceMappingURL=main.css.map */

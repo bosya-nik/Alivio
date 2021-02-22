@@ -1,0 +1,18 @@
+@mixin greenBut {
+            font-family: $sans;
+            padding: 1rem 3rem 1rem 3rem;
+            background-color: $primory;
+            border-radius: 4px;
+            color: $white;
+            transition: all 0.25s ease-in-out;
+            border: solid 1px transparent;
+            &:hover {
+                background-color: $white;
+                border: solid 1px $primory;
+                color: $text;
+                transition: all 0.25s ease-in-out;
+            }
+}
+
+            
+            
